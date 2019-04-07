@@ -7,9 +7,8 @@ function quickSort(arr){
   let right = [];
   let newArr = [];
   let pivot = arr.pop();
-  let len = arr.length;
 
-  for(let i=0; i<len; i++){
+  for(let i=0; i<arr.length; i++){
     if(arr[i] > pivot){
       right.push(arr[i]);
     } else {
@@ -27,5 +26,5 @@ function quickSort(arr){
 
 let test = [7, 9, 10, 23, 35, 1, 4, 8, 3, 12];
 
-console.log('Quicksort Test: ' + test);
-console.log('Quicksort Result: ' + quickSort(test));
+console.log('quickSort Test: ' + test);
+console.log('quickSort Result: ' + quickSort(test));

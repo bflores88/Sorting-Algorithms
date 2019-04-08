@@ -1,6 +1,4 @@
 function mergeSort(arr) {
-
-
   if (arr.length <= 1) {
     return arr;
   }
@@ -27,6 +25,6 @@ function mergeSort(arr) {
   return sorted.concat(leftRecursive.slice(leftIndex)).concat(rightRecursive.slice(rightIndex))
 }
 
-  let test = [9, 30, 3, 23, 35, 1, 4, 8, 3, 12];
+let test = [9, 30, 3, 23, 35, 25, 1, 4, 8, 3, 12];
 
-  console.log(mergeSort(test));
+mergeSort(test);

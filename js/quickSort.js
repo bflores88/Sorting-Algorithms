@@ -16,15 +16,9 @@ function quickSort(arr){
     }
   }
 
-  console.log(left);
-  console.log(pivot);
-  console.log(right);
-
   return newArr.concat(quickSort(left), pivot, quickSort(right));
-
 };
 
 let test = [7, 9, 10, 23, 35, 1, 4, 8, 3, 12];
 
-console.log('quickSort Test: ' + test);
-console.log('quickSort Result: ' + quickSort(test));
+quickSort(test);

@@ -22,6 +22,7 @@ function mergeSort(arr) {
       rightIndex++;
     }
   }
+  
   return sorted.concat(leftRecursive.slice(leftIndex)).concat(rightRecursive.slice(rightIndex))
 }
 
